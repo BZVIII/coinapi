@@ -18,7 +18,3 @@ while seguir == 's':
         print(respuesta.json())
 
     seguir = input("Quieres más (S/N): ").lower()
-
-
-
-
