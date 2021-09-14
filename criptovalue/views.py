@@ -16,7 +16,7 @@ def funcion_del_boton():
     print("Click")
 
 class Exchanger(ttk.Frame):
-    def __init__(self, parent, funcion_click_del_controlador):
+    def __init__(self, parent, una_funcion):
         super().__init__(parent, height=300, width=430)
 
         self.grid_propagate(0)
@@ -29,10 +29,14 @@ class Exchanger(ttk.Frame):
         self.hasta = ttk.Combobox(self, values=MONEDAS, textvariable = self.hasta_valor)
         self.hasta.grid(column=1, row=0)
 
+
+        435
+
+        
         self.valor = ttk.Label(self, anchor=CENTER, text="0.0")
         self.valor.grid(column=0, row=1, columnspan=2)
 
-        self.calcular = ttk.Button(self, text="Calcular", command=funcion_click_del_controlador)
+        self.calcular = ttk.Button(self, text="Calcular", command=una_funcion)
         self.calcular.grid(column=1, row=2)
 
     def moneda_desde(self):
